@@ -1,4 +1,4 @@
-# CS3_1stQtrPortfolio_Aline Teresa Mendoza
+# CS3_1stQtrPortfolio_Nathanael Cabal
 
 ![Portfolio](https://wiztoonz.com/wp-content/uploads/2022/04/Blog-Post-Portfolio.jpg)
 
