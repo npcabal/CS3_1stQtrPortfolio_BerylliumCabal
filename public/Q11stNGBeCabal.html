@@ -1,0 +1,38 @@
+<html>
+  <body>
+    
+    
+
+
+
+
+    <h1>Feed me snacks !!</h1>
+
+    <label> Enter your age
+      <input id="again"/>
+      </label>
+    </br/>
+
+    <label> Enter your max age
+      <input id="maxAge"/>
+      </label></br/>
+
+      <label> Enter number of snacks
+        <input id="numPerDay"/>
+        </label></br/>
+
+    <button onclick="getData()"">Accept Input</button>
+    <script>
+      function getData(){
+        let age=age.value;
+        let maxAge=document.getElementById("maxAge").value;
+        let perDay=document.getElementById("numPerDay").value;
+        let sure=window.confirm("Sure of your numbers?")
+        if(sure){
+          let totalReq=(Number(perDay*365))*(Number(maxAge)-Number(age));
+          result.innerHTML="Result: You will need "+totalReq+" to last you until the ripe old age of "+maxAge+"."
+        }
+      }
+    </script>
+
+  </body>
