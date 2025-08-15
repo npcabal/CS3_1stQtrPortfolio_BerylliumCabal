@@ -1,0 +1,15 @@
+<script>
+  let age=Number(window.prompt("What is your current age?"));
+  let maxAge=Number(window.prompt("Enter your max age"));
+  let snack=window.prompt("What snack do you eat?");
+  let numPerDay=Number(window.prompt("How many snacks do you eat every day?"));
+
+  let totalRequired=(numPerDay*365) * (maxAge - age);
+
+  if(confirm("Is " + age + " your real age and is " + maxAge + " your correct max age?")) {
+    console.log("You will need " + totalRequired + " " + snack + "(s) to last you until the ripe age of " + maxAge + ".");
+  }
+  else{
+    alert("Please run the code again.");
+  }
+</script>
