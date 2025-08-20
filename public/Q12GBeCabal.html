@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Q1 2nd Graded Exercise submitted by Nathanael Cabal of 9Beryllium</h2>
+
+        <label>Meal Price:
+            <input type="text" id="mealPrice"/>
+        </label><br/>
+
+        <label>Tip:
+            <input type="text" id="tip"/>
+        </label><br/>
+
+        <label>Service Charge (%):
+            <input type="text" id="serviceCharge"/>
+        </label><br/>
+
+        <button onclick="totalMeal()">Accept Input</button>
+
+        <p id="result"></p>
+
+        <script>
+            function totalMeal(){
+                let mp=parseFloat(document.getElementById("mealPrice").value);
+                let tip=parseFloat(document.getElementById("tip").value);
+                let scPercent=parseFloat(document.getElementById("serviceCharge").value);
+                let totalCost=mp+tip+(scPercent/100*mp);
+
+                document.getElementById("result").innerHTML="Total Meal: "+totalCost.toFixed(2);
+            }
+        </script>
+        <footer>
+            <h3>References:</h3>
+                <ul>
+                <li><a href="https://www.w3schools.com/html/html_formatting.asp">formatting</a></li>
+                <li><a href="https://www.w3schools.com/tags/tag_button.asp">button</a></li>
+                <li><a href="https://edu.gcfglobal.org/en/basic-html/interactive-elements-in-html/1/">interactive elements</a></li>
+                <li><a href="https://www.w3schools.com/tags/tag_footer.asp">footer</a></li>
+                </ul>
+        </footer>
+    </body>
+</html>
