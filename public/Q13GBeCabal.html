@@ -15,16 +15,16 @@
         <p id="result">Result: </p>
 
         <script>
-            var dNumber=Math.floor(Math.random()*100)+1;
+            var randNum=Math.floor(Math.random()*100)+1;
 
             function checkIt(){
-                var userGuess=parseInt(document.getElementById("guess").value);
+                var guess=parseInt(document.getElementById("guess").value);
                 var resultText="";
 
-                if(userGuess<dNumber){
+                if(guess<randNum){
                     resultText="Higher";
                 }
-                else if(userGuess>dNumber){
+                else if(guess>randNum){
                     resultText="Lower";
                 }
                 else{
@@ -34,6 +34,15 @@
                 document.getElementById("result").innerText="Result: "+resultText;
             }
         </script>
-
+        <footer>
+            <h3>References:</h3>
+                <ul>
+                <li><a href="https://www.w3schools.com/html/html_formatting.asp">W3Schools.com. (n.d.). https://www.w3schools.com/html/html_formatting.asp</a></li>
+                <li><a href="https://www.w3schools.com/tags/tag_button.asp">W3Schools.com. (n.d.). https://www.w3schools.com/tags/tag_button.asp</a></li>
+                <li><a href="https://edu.gcfglobal.org/en/basic-html/interactive-elements-in-html/1/">GCFGlobal. (n.d.). https://edu.gcfglobal.org/en/basic-html/interactive-elements-in-html/1/</a></li>
+                <li><a href="https://www.w3schools.com/tags/tag_footer.asp">W3Schools.com. (n.d.). https://www.w3schools.com/tags/tag_footer.asp</a></li>
+                <li><a href="https://stackoverflow.com/questions/16116832/generating-a-random-number-for-html">Generating a random number for HTML. (n.d.). Stack Overflow. https://stackoverflow.com/questions/16116832/generating-a-random-number-for-html</a></li>
+                </ul>
+        </footer>
     </body>
 </html>
