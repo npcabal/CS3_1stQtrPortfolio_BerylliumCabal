@@ -15,16 +15,16 @@
         <p id="result">Result: </p>
 
         <script>
-            var randNum=Math.floor(Math.random()*100)+1;
+            var dNumber=Math.floor(Math.random()*100)+1;
 
             function checkIt(){
                 var guess=parseInt(document.getElementById("guess").value);
                 var resultText="";
 
-                if(guess<randNum){
+                if(guess<dNumber){
                     resultText="Higher";
                 }
-                else if(guess>randNum){
+                else if(guess>dNumber){
                     resultText="Lower";
                 }
                 else{
